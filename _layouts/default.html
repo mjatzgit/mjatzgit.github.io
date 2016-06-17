@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   {% include head.html %}
 
   <body>
-
+    <div ng-app="portfolio" ng-controller="MainController">
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="page-content container">
+      <div class="row">
+
+          <div ui-view></div>
+      
       </div>
     </div>
 
     {% include footer.html %}
-
+  </div>
   </body>
 
 </html>
