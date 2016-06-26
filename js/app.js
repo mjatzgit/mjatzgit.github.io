@@ -7,7 +7,7 @@
 var app = angular.module('portfolio', [
 
     // imported Dependencies - - - - 
-    //'ngAnimate',
+    'ngAnimate',
     'ui.bootstrap',
     // 'duScroll',
     // 'mgcrea.jquery',

@@ -1,4 +1,21 @@
-<h1>Projects</h1>
-<hr/>
-<a ui-sref=".list">Show List</a>
-<div ui-view></div>
+<div class="page-wrap projects">
+
+	<h1>Projects</h1>
+
+	<div class="col-left">
+		 <ul class="bigUppedText">
+		     <li ng-repeat="project in projectColOne">
+		         <span class="projectname" ng-click="openProject(project)" ng-bind="project.name"></span>
+		     </li>
+		 </ul>
+	</div>
+
+	<div class="col-right">
+		 <ul class="bigUppedText">
+		     <li ng-repeat="project in projectColTwo">
+		         <span class="projectname" ng-click="openProject(project)" ng-bind="project.name"></span>
+		     </li>
+		 </ul>
+	</div>
+ 
+</div>

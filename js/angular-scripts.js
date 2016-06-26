@@ -40,28 +40,45 @@ angular.module('MainController', [])
 
 .controller('MainController', function ( $scope, ProjectService, $uibModal, $log ) {
 
-
-
-    $scope.projects = [];
-    ProjectService.get().success(function(data){
-        $scope.projects = data;
-         console.log($scope.projects);
-    });
-      
+    /***  NAV SWITCH ****/
     $scope.navState = false;
 
     $scope.navToggle = function (state) {
         $scope.navState = $scope.navState === false ? true: false;
-        console.log($scope.navState);
     }
 
-  
 
+    /*** GET PROJECTS from service) ****/
+    $scope.projects = [];
+    ProjectService.get().success(function(data){
+        var projects = data;
+        $scope.projects = data;
+         //console.log( projects);
+         splitIn2Columns(projects) //odd - even
+    });
+      
+
+    /*** PROJECT COLUMNS ****/ 
+    $scope.projectColOne = [];
+    $scope.projectColTwo = [];
+    
+    function splitIn2Columns(projects) {
+        angular.forEach( projects, function(value, key) {
+
+            if(key %2 == 0 ){   $scope.projectColOne.push( value ) } 
+            else{               $scope.projectColTwo.push( value ) }
+                
+        })
+    }
+      
+
+   
+    /*** PROJECT MODAL ****/ 
     $scope.openProject = function (project) {
 
         var modalInstance = $uibModal.open({
             
-            templateUrl: '../modals/projectmodal.html',
+            templateUrl: '../partials/modal.html',
             controller: 'ProjectModalCtrl',
             size: 'lg',
             resolve: {
@@ -74,7 +91,7 @@ angular.module('MainController', [])
         modalInstance.result.then(function () {
             
         }, function () {
-            $log.info('Modal dismissed at: ' + new Date());
+             
         });
     };
 
