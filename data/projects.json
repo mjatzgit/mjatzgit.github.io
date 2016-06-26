@@ -11,6 +11,7 @@
 	},
 	{
 		"name": 	"THE COLOR RUN",
+		"url":		"http://thecolorrun.dk/",
 		"content": 	"The Color Run is Denmark's most colorful 5 km run. Their previous website was a bought pre-made theme in WordPress. With the new website they wanted the website to resemble the main page thecolorrun.com. Therefore we were asked to clone the main page design to the new Danish website. <br/> <br/> The new website has currently 4 languages ​​and more can be added. All pages are built with ACF's flexible content editor. It has also extra ACF options fields to control various settings such as: “night mode” where the entire page will be inverted with an black background and night mode stylesheet. <br/> <br/> There was also added a modal, which pops up when the user is leaving the homepage. <br/> <br/> And finally there were used Instagram API to retrieve the last 9 images from a particular hashtag per language.",
 		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, JSON, ANGULAR, PHP",
 		"images": {
@@ -30,6 +31,7 @@
 	},
 	{
 		"name": 	"EGERBYG",
+		"url":		"https://egerbyg.dk/",
 		"content": 	"Egerbyg is a carpenting entrepenuer. Their previous website was out of date, and it became our job to make the website responsive and implement new features. Today the entire theme has been redesigned and rewritten. In February 2016 a multi step product price calculator was coded using AngularJS, UI-Router, utilized by the new WP Rest API",
 		"tags": 	"HTML5, CSS3, BOOTSTRAP, LESS, ANGULAR, JQUERY, PHP, REST API, WORDPRESS MULITSITE",
 		"images": {
@@ -39,7 +41,6 @@
 	},
 	{
 		"name": 	"SUNSTONE",
-		"type": 	"WordPress",
 		"url":		"http://sunstone.eu",
 		"content": 	"Sunstone is an investment company, who needed a new website. Their old website had to many bugs and was not responsive. Therefore it was decided to start over, rebuilding everything. The result was a much cleaner admin interface. It features bi directional relations between Portfolio cases and team members, and a simple blog",
 		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, PHP, WORDPRESS",
@@ -50,8 +51,7 @@
 	},
 	{
 		"name": 	"ROSENGAARDSCENTERET",
-		"type": 	"WordPress",
-		"url":		"http://rosengaardcentret.dk",
+ 		"url":		"http://rosengaardcentret.dk",
 		"content": 	"Rosengaardscenteret is a shopping mall i Odense, Denmark. The website features an overview and single page of all shops in the center, including their location on a center map. Also activities, and a custom system to manage holidays/special opening hours. We also coded a intranet site which the shops can use to report montly sales.",
 		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, PHP, FACEBOOK API, INSTAGRAM API, WORDPRESS",
 		"images": {
@@ -61,8 +61,7 @@
 	},
 	{
 		"name": 	"NIMBUSFILM",
-		"type": 	"WordPress",
-		"url":	"http://nimbusfilm.dk/",
+ 		"url":	"http://nimbusfilm.dk/",
 		"content": 	"Nimbusfilm is a movie production company based in Copenhagen. During my education as Multimedia Designer, I was hired to create a Wordpress website for Nimbusfilm. The website features a movie and employees cataloque, with bi-directional references which links ex. : a specific producer to a movie and vice versa... The movie cataloque sorting uses a jQuery plugin called 'Mix It Up'", 
 		"tags": 	"HTML5, CSS3, BOOTSTRAP, JQUERY, PHP, INSTAGRAM API, TWITTER API, FACEBOOK API, WORDPRESS",
 		"images": {
@@ -72,9 +71,9 @@
 	},
 	{
 		"name": 	"SWIPX",
-		"type": 	"WordPress Woocommerce",
-		"content": 	"Swipx is a sales & marketing platform for software and solution vendors and buyers. <br> We helped bring this idea, all the way to the final product. The system is build using Wordpress and Woocommerce, which has been modified to follow the business logic required. The backend has many custom features, and several plugins was written.",
-		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, PHP, ANGULAR JS, WORDPRESS",
+		"url":		"https://swipx.com/",
+ 		"content": 	"Swipx is a sales & marketing platform for software and solution vendors and buyers. <br> We helped bring this idea, all the way to the final product. The system is build using Wordpress and Woocommerce, which has been modified to follow the business logic required. The backend has many custom features, and several plugins was written.",
+		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, PHP, ANGULAR JS, WORDPRESS, WOOCOMMERCE",
 		"images": {
 			"image1": 	"swipx1.jpg",
 			"image2": 	"swipx2.jpg"
@@ -82,6 +81,7 @@
 	},
 	{
 		"name": 	"ROSENDAHLS BEGRAVELSER",
+		"url":		"http://rosendahls-begravelse.dk/",
  		"content": 	"Rosendahls begravelse is a funeral company that has offices throughout Nordsjælland. <br/> They had an old Joomla website, but needed a more user-friendly website, so the choice fell on a WordPress website. The website is a standard profile site with product subpages. <br/> <br/> There is also a list of locale offices with contact info.",
 		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, PHP, WORDPRESS",
 		"images": {
@@ -91,8 +91,8 @@
 	},
 	{
 		"name": 	"AMAGERBUTIKKERNE",
- 		"url":		"",
-		"content": 	".",
+ 		"url":		"http://www.amagerbutikkerne.dk/",
+		"content": 	"Desciption coming soon..",
 		"tags": 	"HTML5, CSS3, BOOTSTRAP, JQUERY, JSON, ANGULAR, PHP, WORDPRESS",
 		"images": {
 			"image1": 	"amagerbut1.jpg",
@@ -101,8 +101,7 @@
 	},
 	{
 		"name": 	"KELLY HANSEN",
-		"type": 	"WordPress",
-		"url":		"http://kellyhansen.dk/gallery/portrait/",
+ 		"url":		"http://kellyhansen.dk/gallery/portrait/",
 		"content": 	"Portfolio for a proffesional photographer. Kelly's vision was to have a simple website that would represent his photos, clean and simple. To free as much screenspace for the image in focus, we designed it with a thumbnail footer, and bottom navigation. Regardless of device or screensize, it should always fit the screen, aka no scrolling. To meet these requirements some jQuery was used to determine screen height and width, and to calculate the image size, which all have diffenrent aspect ratio. Not an easy task also considering the cross browser universe. but check it out, the result was quite good :-). <br> Wordpress was choosen to give Kelly an easy way to create and update galleries.",
 		"tags": 	"HTML5, CSS3, LESS, JQUERY, PHP, WORDPRESS",
 		"images": {
@@ -113,7 +112,7 @@
 	{
 		"name": 	"MIDGAARD EVENT",
  		"url": 		"http://www.mev.dk/",
-		"content": 	"Event Agency",
+		"content": 	"Desciption coming soon..",
 		"tags": 	"HTML5, CSS3, BOOTSTRAP, JQUERY, PHP, WORDPRESS",
 		"images": {
 			"image1": 	"inno1.png",
@@ -122,8 +121,7 @@
 	},
 	{
 		"name": 	"BUS OG TOG",
-		"type": 	"WordPress",
-		"url":		"http://www.busogtog.dk",
+ 		"url":		"http://www.busogtog.dk",
 		"content": 	"Bus og Tog is an organisation who's mission is to make public transport easier for the daily users. They are also part of 'Rejsekortet'. <br> The website is quite simple. The nice stuff for me, here is the nice transitions when the header becomes sticky, and also the footer has a simple animated SVG. It also fetaures a login area, where accessed users can download different files.",
 		"tags": 	"HTML5, CSS3, BOOTSTRAP, JQUERY, PHP, WORDPRESS",
 		"images": {
@@ -143,7 +141,8 @@
 	},
 	{
 		"name": 	"VBS BOWLING",
- 		"content": 	"",
+		"url":		"http://vbsbowl.com/",
+ 		"content": 	"Desciption coming soon..",
 		"tags": 	"HTML5, CSS3, BOOTSTRAP, JQUERY, PHP, WORDPRESS",
 		"images": {
 			"image1": 	"vbs1.jpg",
@@ -172,7 +171,7 @@
 	},
 	{
 		"name": 	"GLOSTRUP SKOLE",
- 		"content": 	"This school needed a new website.",
+ 		"content": 	"Desciption coming soon..",
 		"tags": 	"HTML5, CSS3, ANGULAR, JSON, WORDPRESS",
 		"images": {
 			"image1": 	"gloskole1.jpg",
