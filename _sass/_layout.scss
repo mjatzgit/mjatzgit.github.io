@@ -137,6 +137,7 @@ nav.site-nav {
     &.hello div{
         position: absolute;
         top: 35%;
+        z-index: -1;
         h1{
             margin-bottom: 6px;
         }
