@@ -35,6 +35,24 @@ nav.site-nav {
     text-align: right;
     font-weight: 300;
 
+    @include media-query($on-palm) {
+        
+        &.open{
+            background-color: #fdfdfd;
+            left: 0;
+            border-bottom: 2px solid #716d6d;
+            box-shadow: 0px 4px 10px rgba(117, 117, 117, 0.62);
+            top: 0;
+            padding: 90px 20px;
+            right: 0;
+            
+            .burger{
+                top: 20px;
+                right:  20px;
+            }
+        }
+    }
+
     hr{
         margin: 10px 0 6px;
     }
@@ -44,6 +62,11 @@ nav.site-nav {
         right: 0px;
         top: 0;
         position: absolute;
+
+        @include media-query($on-palm) {
+            cursor: pointer;
+        }
+       
 
         svg{
             height: 50px;
@@ -78,9 +101,7 @@ nav.site-nav {
 
 }
 
-/**
- * PAGES
- */
+ 
 .bigUppedText{
     font-size: 18px;
     font-weight: 300;
@@ -122,8 +143,23 @@ nav.site-nav {
     }
     
     &.projects{
-        span.projectname{
+        
+        .project{
             
+            span{
+                transition: 0.3s all;
+                border: 1px solid rgba(0, 0, 0, 0);
+                padding: 0 5px;
+            }
+
+            &:hover{
+                span.projectname{
+                
+                    border: 1px solid #e6e6e6;
+                    background-color: #f9f9f9;
+                    transition: 0.3s all;
+                }
+            }
         }
         .bigUppedText{
             cursor: pointer;

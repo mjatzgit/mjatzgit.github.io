@@ -2,50 +2,96 @@
 /**********************************************************************
  * Angular Application
  **********************************************************************/
-angular.module('MainController', [])
+ angular.module('MainController', [])
 
-.config(function($stateProvider, $urlRouterProvider) {
-   
-  // For any unmatched url, redirect to /state1
-  $urlRouterProvider.otherwise("/hello");
+ .config(function($stateProvider, $urlRouterProvider) {
+
+    // For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise("/hello");
   
-  // Now set up the states
-  $stateProvider
+    // Now set up the states
+    $stateProvider
+
     .state('hello', {
-      url: "/hello",
-      templateUrl: "partials/hello.html"
+        url: "/hello",
+        templateUrl: "partials/hello.html"
     })
- 
     .state('projects', {
-      url: "/projects",
-      templateUrl: "partials/projects.html"
+        url: "/projects",
+        templateUrl: "partials/projects.html"
     })
     .state('projects.list', {
-      url: "/list",
-      templateUrl: "partials/projects.list.html",
-      controller: function($scope) {
-        $scope.things = ["A", "Set", "Of", "Things"];
-      }
+        url: "/list",
+        templateUrl: "partials/projects.list.html",
     })
     .state('about', {
-      url: "/about",
-      templateUrl: "partials/about.html"
+        url: "/about",
+        templateUrl: "partials/about.html"
     })
-
     .state('tech', {
-      url: "/technologies",
-      templateUrl: "partials/tech.html"
+        url: "/technologies",
+        templateUrl: "partials/tech.html"
     })
 })
 
-.controller('MainController', function ( $scope, ProjectService, $uibModal, $log ) {
+ .controller('MainController', function ( $window, $scope, ProjectService, $uibModal, $log ) {
 
     /***  NAV SWITCH ****/
-    $scope.navState = false;
+    $scope.navState = true;
+    $scope.screenMode = 'desktop'
+    var screenWidth = $window.innerWidth;
+
 
     $scope.navToggle = function (state) {
-        $scope.navState = $scope.navState === false ? true: false;
+        if($scope.screenMode == 'mobile'){
+            console.log(state);
+            $scope.navState = $scope.navState === false ? true: false;
+            console.log($scope.navState);
+        }
     }
+
+    toggleScreenAndNavMode(screenWidth)
+
+    angular.element($window).bind('resize', function(){
+        $scope.$apply(function() {
+            screenWidth = $window.innerWidth;
+            toggleScreenAndNavMode(screenWidth)
+
+         });
+    });
+
+
+    function toggleScreenAndNavMode(screenWidth){
+        if(screenWidth > 800){
+            $scope.screenMode = 'desktop'
+            $scope.navState = true;
+        }
+        else{
+            
+            if($scope.screenMode != 'mobile'){
+                $scope.navState = false;
+                $scope.screenMode = 'mobile'
+            }
+         
+        }
+        //console.log(screenWidth);
+        console.log($scope.screenMode);
+    }
+
+    $scope.closeMobileMenu = function (){
+        if($scope.screenMode == 'mobile'){
+            $scope.navState = false;
+        }
+    }
+
+
+
+    
+    // $scope.$watch('window.innerWidth', function() {
+    //     console.log(window.innerWidth);
+    // });
+
+    
 
 
     /*** GET PROJECTS from service) ****/
@@ -55,8 +101,8 @@ angular.module('MainController', [])
         $scope.projects = data;
          //console.log( projects);
          splitIn2Columns(projects) //odd - even
-    });
-      
+     });
+
 
     /*** PROJECT COLUMNS ****/ 
     $scope.projectColOne = [];
@@ -66,18 +112,18 @@ angular.module('MainController', [])
         angular.forEach( projects, function(value, key) {
 
             if(key %2 == 0 ){   $scope.projectColOne.push( value ) } 
-            else{               $scope.projectColTwo.push( value ) }
-                
-        })
-    }
-      
+                else{               $scope.projectColTwo.push( value ) }
 
-   
+            })
+    }
+
+
+
     /*** PROJECT MODAL ****/ 
     $scope.openProject = function (project) {
 
         var modalInstance = $uibModal.open({
-            
+
             templateUrl: '../partials/modal.html',
             controller: 'ProjectModalCtrl',
             size: 'lg',
@@ -89,14 +135,14 @@ angular.module('MainController', [])
         });
 
         modalInstance.result.then(function () {
-            
+
         }, function () {
-             
+
         });
     };
 
 })
-.controller('ProjectModalCtrl', function ($scope, $uibModalInstance, project) {
+ .controller('ProjectModalCtrl', function ($scope, $uibModalInstance, project) {
 
     $scope.project = project;
 
@@ -109,7 +155,7 @@ angular.module('MainController', [])
     };
 })
 
-.service('ProjectService', function($http) {
+ .service('ProjectService', function($http) {
     return {
         get : function() {
             return $http.get('/data/projects.json');

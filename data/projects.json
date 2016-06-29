@@ -2,7 +2,7 @@
 	{
 		"name": 	"LIDKOEB",
 		"url":		"http://lidkoeb.dk",
-		"content": 	"Lidkoeb is an famous and atmospheric bar in Copenhagen. With their new website they wanted to catch the atmosphere and identity from the bar. The solution was a 'one pager', divided in sections, and with modals (popups) to contain additional content. <br> Reconstructing the carefully crafted Design in the browser, especiallly regarding fonts and letter spacing, was somehow a challenge to perfectionize due to our glorious cross browser world, but in the end the result was really satisfying. It's also possible to order a table in the bar at a specific time and date. To feature that, a Wordpress plugin called Restaurant Reservation was customised to suit the requirements by Lidkoeb. The Instagram Api was also used to display the latest images uploaded to their profile.",
+		"content": 	"Lidkoeb is an famous and atmospheric bar in Copenhagen. With their new website they wanted to catch the atmosphere and identity from the bar. The solution was a 'one pager', divided in sections, and with modals (popups) to contain additional content. <br><br/>  Reconstructing the carefully crafted design in the browser, especiallly regarding fonts and letter spacing, was somehow a challenge to perfectionize due to our glorious cross browser world, but in the end the result was really satisfying. It's also possible to order a table in the bar at a specific time and date. To feature that, a Wordpress plugin called Restaurant Reservation was customised to suit the requirements by Lidkoeb. The Instagram Api was also used to display the latest images uploaded to their profile.",
 		"tags": 	"HTML5, CSS3, LESS, BOOTSTRAP, JQUERY, PHP, Instagram API",
 		"images": {
 			"image1": 	"lidkoeb1.jpg",
@@ -165,8 +165,7 @@
 		"content": 	"My portfolio is made with Jekyll. Is was a learning experience for me and i learned a lot from it. It's all custom made HTML and CSS3, with no use of a CSS framework. <br /><br />The source code can be viewed here: <a href=\"https://mjatzgit.github.io/\">Github</a>",
 		"tags": 	"HTML5, CSS3, SASS, ANGULAR, UI-ROUTER, JSON, JEKYLL",
 		"images": {
-			"image1": 	"port1.png",
-			"image2": 	"port2.png"
+			
 		}
 	},
 	{
@@ -174,8 +173,7 @@
  		"content": 	"Desciption coming soon..",
 		"tags": 	"HTML5, CSS3, ANGULAR, JSON, WORDPRESS",
 		"images": {
-			"image1": 	"gloskole1.jpg",
-			"image2": 	"gloskole2.jpg"
+			"image1": 	"gloskole1.jpg"
 		}
 	}
 ]

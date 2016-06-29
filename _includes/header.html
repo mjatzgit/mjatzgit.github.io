@@ -1,26 +1,26 @@
-<header>
 
-  <nav class="site-nav">
+<header>
  
+  <nav class="site-nav" ng-class="{open: navState == 1}">
+
     <i class="burger" ng-click="navToggle()">{% include icon-burger.svg %}</i>
-    
-  
-    <!-- ng-show="navState" -->
-    <ul class="animate-nav" >
-      
-      <li><a ui-sref="projects">PROJECTS</a></li>
-      <li><a ui-sref="tech">TECH</a></li>
-      <li><a ui-sref="about">ABOUT ME</a></li>
-      <li><a ui-sref="hello">FORGOT MY NAME?</a></li>
-    
-    
-      <!-- <img src="{{ site.url }}/assets/screenshot.jpg"> -->
-      <hr>
+ 
+   
+    <ul class="animate-nav" ng-show="navState">
+
+        <li><a ng-click="closeMobileMenu()" ui-sref="projects">PROJECTS</a></li>
+        <li><a ng-click="closeMobileMenu()" ui-sref="tech">TECH</a></li>
+        <li><a ng-click="closeMobileMenu()" ui-sref="about">ABOUT ME</a></li>
+        <li><a ng-click="closeMobileMenu()" ui-sref="hello">FORGOT MY NAME?</a></li>
+
+        <hr>
+
         <li><a href="mailto:mjatzbox@gmail.com"><small>mjatzbox@gmail.com</small></a></li>
         <li><a href="tel:50477866"><small>50 477 866</small></a></li>
- 
+
     </ul>
-  </nav>
+</nav>
 
 
 </header>
+ 

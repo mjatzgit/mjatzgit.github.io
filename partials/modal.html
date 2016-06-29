@@ -7,7 +7,7 @@
 		
 		<h2>{{project.name}}</h2>
 
-		<div class="screenshots">
+		<div class="screenshots" ng-if="project.images.image1">
 			<div class="image1">
 				<img ng-src="/assets/{{project.images.image1}}" alt="">
 			</div>

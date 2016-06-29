@@ -4,7 +4,7 @@
 
 	<div class="col-left">
 		 <ul class="bigUppedText">
-		     <li ng-repeat="project in projectColOne">
+		     <li class="project" ng-repeat="project in projectColOne">
 		         <span class="projectname" ng-click="openProject(project)" ng-bind="project.name"></span>
 		     </li>
 		 </ul>
@@ -12,7 +12,7 @@
 
 	<div class="col-right">
 		 <ul class="bigUppedText">
-		     <li ng-repeat="project in projectColTwo">
+		     <li class="project" ng-repeat="project in projectColTwo">
 		         <span class="projectname" ng-click="openProject(project)" ng-bind="project.name"></span>
 		     </li>
 		 </ul>
