@@ -1,7 +1,9 @@
 /**
  * Site header
  */
-
+*{
+    box-sizing: border-box;
+}
 html {
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
@@ -204,9 +206,9 @@ nav.site-nav {
 
 
   
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+// *, *:before, *:after {
+//     box-sizing: inherit;
+// }
 
 .modal-open .modal {
     overflow-x: hidden;
