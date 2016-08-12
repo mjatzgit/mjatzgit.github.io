@@ -162,7 +162,7 @@
 	{
 		"name": 	"MJATZGIT",
 		"url":		"http://mjatzgit.github.io",
-		"content": 	"My portfolio is made with Jekyll. Is was a learning experience for me and i learned a lot from it. It's all custom made HTML and CSS3, with no use of a CSS framework. <br /><br />The source code can be viewed here: <a href=\"https://mjatzgit.github.io/\">Github</a>",
+		"content": 	"My portfolio is made with Jekyll. Is was a learning experience for me and i learned a lot from it. It's all custom made HTML and CSS3, with no use of a CSS framework. I choose to use Angular and UI-Router to make it a single page application<br /><br />The source code can be viewed here: <a href=\"https://mjatzgit.github.io/\">Github</a>",
 		"tags": 	"HTML5, CSS3, SASS, ANGULAR, UI-ROUTER, JSON, JEKYLL",
 		"images": {
 			
