@@ -3,10 +3,12 @@
 ---
 @charset "utf-8";
 
-
+ 
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600';
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family:  'open Sans', sans-serif; //'Oswald', sans-serif; /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+
 $base-font-size:   20px;
 $base-font-weight: 300;
 $fat-font-weight:  600;
