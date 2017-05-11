@@ -10,7 +10,7 @@
     $urlRouterProvider.otherwise("/hello");
   
     // Now set up the states
-    $stateProvider
+    $routeProvider
 
 
     .when('hello', {
@@ -33,7 +33,7 @@
         url: "/about",
         templateUrl: "partials/about.html"
     })
-    
+
     .when('tech', {
         url: "/technologies",
         templateUrl: "partials/tech.html"
