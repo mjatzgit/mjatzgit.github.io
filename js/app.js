@@ -51,7 +51,7 @@ var app = angular.module('portfolio', [
     // Now set up the states
     $stateProvider
 
-    .route('hello', {
+    .state('hello', {
         url: "/hello",
         templateUrl: "partials/hello.html"
     })
