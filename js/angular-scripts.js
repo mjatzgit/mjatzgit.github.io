@@ -12,7 +12,7 @@
     // Now set up the states
     $stateProvider
 
-    .route('hello', {
+    .state('hello', {
         url: "/hello",
         templateUrl: "partials/hello.html"
     })
