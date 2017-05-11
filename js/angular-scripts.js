@@ -4,41 +4,10 @@
  **********************************************************************/
  angular.module('MainController', [])
 
- .config(function($stateProvider, $urlRouterProvider) {
+//  .config(function($stateProvider, $urlRouterProvider) {
 
-    // For any unmatched url, redirect to /hello
-    $urlRouterProvider.otherwise("/hello");
-  
-    // Now set up the states
-    $routeProvider
-
-
-    .when('hello', {
-        url: "/hello",
-        templateUrl: "partials/hello.html"
-    })
-
-
-    .when('projects', {
-        url: "/projects",
-        templateUrl: "partials/projects.html"
-    })
-
-    .when('projects.list', {
-        url: "/list",
-        templateUrl: "partials/projects.list.html",
-    })
-
-    .when('about', {
-        url: "/about",
-        templateUrl: "partials/about.html"
-    })
-
-    .when('tech', {
-        url: "/technologies",
-        templateUrl: "partials/tech.html"
-    })
-})
+   
+// })
 
  .controller('MainController', function ( $window, $scope, ProjectService, $uibModal, $log ) {
 

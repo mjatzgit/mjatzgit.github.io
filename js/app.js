@@ -17,13 +17,68 @@ var app = angular.module('portfolio', [
     // Controllers
     'MainController',
     
-]).config(function($httpProvider) {
+]).config(function($httpProvider, $routeProvider, $stateProvider, $urlRouterProvider) {
    
+
+   // ROUTING ===============================================
+   // set our routing for this application
+   // each route will pull in a different controller
+ 
+
+   $routeProvider
+
+       // home page
+       .when('/scotch', {
+           templateUrl: 'page-home.html',
+           controller: 'mainController'
+       })
+
+       // about page
+       .when('/scoio', {
+           templateUrl: 'page-about.html',
+           controller: 'aboutController'
+       })
+
+       // contact page
+       .when('/contact', {
+           templateUrl: 'page-contact.html',
+           controller: 'contactController'
+       });
+
+     // For any unmatched url, redirect to /state1
+    $urlRouterProvider.otherwise("/hello");
+  
+    // Now set up the states
+    $stateProvider
+
+    .route('hello', {
+        url: "/hello",
+        templateUrl: "partials/hello.html"
+    })
+    .state('projects', {
+        url: "/projects",
+        templateUrl: "partials/projects.html"
+    })
+    .state('projects.list', {
+        url: "/list",
+        templateUrl: "partials/projects.list.html",
+    })
+    .state('about', {
+        url: "/about",
+        templateUrl: "partials/about.html"
+    })
+    .state('tech', {
+        url: "/technologies",
+        templateUrl: "partials/tech.html"
+    })
+
+ 
+
 
 }).run(function($rootScope, $http, $location ){
    
     
 }).controller('MainCtrl', function ( $scope ) {
-    console.log('safgfsd');
+    console.log('angular.js Up');
 });
 
