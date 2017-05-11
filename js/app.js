@@ -4,7 +4,7 @@
 /**********************************************************************
  * Angular Application
  **********************************************************************/
-var app = angular.module('portfolio', [
+angular.module('portfolio', [
 
     // imported Dependencies - - - - 
     'ngAnimate',
@@ -16,7 +16,7 @@ var app = angular.module('portfolio', [
     // Controllers
     // 'MainController',
     
-
+])
 .config([
     '$routeProvider',
     '$httpProvider', 
@@ -51,8 +51,9 @@ var app = angular.module('portfolio', [
        // })
    
 
-}]).run(function($rootScope, $http, $location ){
+}])
+.run(['$rootScope', '$http', '$location', function( $rootScope, $http, $location ){
    
     
-})
+}])
 
