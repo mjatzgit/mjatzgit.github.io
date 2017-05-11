@@ -24,32 +24,31 @@ angular.module('portfolio', [
     function($routeProvider, $httpProvider, $locationProvider) {
         
        // // For any unmatched url, redirect to /state1
-       // $urlRouterProvider.otherwise("/hello");
+       $urlRouterProvider.otherwise("/hello");
        
        // // Now set up the states
-       $routeProvider
+       $stateProvider
 
-       .when('hello', {
+       .state('hello', {
            url: "/hello",
-           controller : "siteController",
            templateUrl: "partials/hello.html"
        })
-       // .state('projects', {
-       //     url: "/projects",
-       //     templateUrl: "partials/projects.html"
-       // })
-       // .state('projects.list', {
-       //     url: "/list",
-       //     templateUrl: "partials/projects.list.html",
-       // })
-       // .state('about', {
-       //     url: "/about",
-       //     templateUrl: "partials/about.html"
-       // })
-       // .state('tech', {
-       //     url: "/technologies",
-       //     templateUrl: "partials/tech.html"
-       // })
+       .state('projects', {
+           url: "/projects",
+           templateUrl: "partials/projects.html"
+       })
+       .state('projects.list', {
+           url: "/list",
+           templateUrl: "partials/projects.list.html",
+       })
+       .state('about', {
+           url: "/about",
+           templateUrl: "partials/about.html"
+       })
+       .state('tech', {
+           url: "/technologies",
+           templateUrl: "partials/tech.html"
+       })
    
 
 }])
