@@ -10,7 +10,7 @@ angular.module('portfolio', [
     'ngAnimate',
     'ui.bootstrap',
     'ui.router',
-    'ngSanitize',
+    //'ngSanitize',
  
     //** Portfolio ***//
     // Controllers
@@ -29,8 +29,9 @@ angular.module('portfolio', [
        // // Now set up the states
        $routeProvider
 
-       .route('hello', {
+       .when('hello', {
            url: "/hello",
+           controller : "siteController",
            templateUrl: "partials/hello.html"
        })
        // .state('projects', {
