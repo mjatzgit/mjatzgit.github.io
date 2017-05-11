@@ -6,29 +6,35 @@
 
  .config(function($stateProvider, $urlRouterProvider) {
 
-    // For any unmatched url, redirect to /state1
+    // For any unmatched url, redirect to /hello
     $urlRouterProvider.otherwise("/hello");
   
     // Now set up the states
     $stateProvider
 
-    .state('hello', {
+
+    .when('hello', {
         url: "/hello",
         templateUrl: "partials/hello.html"
     })
-    .state('projects', {
+
+
+    .when('projects', {
         url: "/projects",
         templateUrl: "partials/projects.html"
     })
-    .state('projects.list', {
+
+    .when('projects.list', {
         url: "/list",
         templateUrl: "partials/projects.list.html",
     })
-    .state('about', {
+
+    .when('about', {
         url: "/about",
         templateUrl: "partials/about.html"
     })
-    .state('tech', {
+    
+    .when('tech', {
         url: "/technologies",
         templateUrl: "partials/tech.html"
     })
@@ -50,10 +56,13 @@
         }
     }
 
+    //on load
     toggleScreenAndNavMode(screenWidth)
 
+    //window resize event
     angular.element($window).bind('resize', function(){
         $scope.$apply(function() {
+
             screenWidth = $window.innerWidth;
             toggleScreenAndNavMode(screenWidth)
 
@@ -91,9 +100,7 @@
     //     console.log(window.innerWidth);
     // });
 
-    
-
-
+     
     /*** GET PROJECTS from service) ****/
     $scope.projects = [];
     ProjectService.get().success(function(data){
