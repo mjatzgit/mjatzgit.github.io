@@ -15,7 +15,7 @@ var app = angular.module('portfolio', [
 
     //** Portfolio ***//
     // Controllers
-    'MainController',
+    // 'MainController',
     
 ]).config(function($httpProvider) {
    
