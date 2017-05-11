@@ -17,18 +17,8 @@ var app = angular.module('portfolio', [
     // Controllers
     'MainController',
     
-]).config(function($httpProvider, $routeProvider, $stateProvider, $urlRouterProvider) {
+]).config(function($httpProvider) {
    
-
-   // ROUTING ===============================================
-   // set our routing for this application
-   // each route will pull in a different controller
- 
-
-   
-
- 
-
 
 }).run(function($rootScope, $http, $location ){
    
