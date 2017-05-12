@@ -20,7 +20,8 @@ angular.module('portfolio', [
     '$httpProvider', 
     '$locationProvider',
     function($routeProvider, $httpProvider, $locationProvider) {
-        
+        	
+       console.log('congig');
        // // For any unmatched url, redirect to /state1
        $urlRouterProvider.otherwise("/hello");
        
