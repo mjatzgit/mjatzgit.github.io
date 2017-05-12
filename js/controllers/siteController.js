@@ -2,7 +2,7 @@
 /**********************************************************************
  * Angular Application
  **********************************************************************/
- angular.module('portfolio')
+ angular.module('miscController')
 
  .controller('ProjectModalCtrl', function ($scope, $uibModalInstance, project) {
 
