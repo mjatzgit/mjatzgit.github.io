@@ -14,7 +14,8 @@ angular.module('portfolio', [
     '$httpProvider', 
     '$locationProvider',
     '$stateProvider',
-    function($routeProvider, $httpProvider, $locationProvider, $stateProvider) {
+    '$urlRouterProvider',
+    function($routeProvider, $httpProvider, $locationProvider, $stateProvider, $urlRouterProvider) {
         	
        console.log('congig');
        // // For any unmatched url, redirect to /state1
