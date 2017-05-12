@@ -19,7 +19,7 @@
     };
 })
 
- .service('ProjectService', function($http) {
+.service('ProjectService', function($http) {
     return {
         get : function() {
             return $http.get('/data/projects.json');
