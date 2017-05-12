@@ -6,6 +6,7 @@
 
  .controller('siteController', function ( $window, $scope, ProjectService, $uibModal, $log ) {
 
+ 	console.log('siteController');
     /***  NAV SWITCH ****/
     $scope.navState = true;
     $scope.screenMode = 'desktop'

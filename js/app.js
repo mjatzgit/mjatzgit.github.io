@@ -53,7 +53,7 @@ angular.module('portfolio', [
 	'$trace', 
 	function( $rootScope, $http, $location, $trace ){
    		
-   		console.log('jhhhh');
+   		console.log('run');
      	$trace.enable('TRANSITION');
      
 }])
