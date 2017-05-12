@@ -3,18 +3,12 @@
  * Angular Application
  **********************************************************************/
 angular.module('portfolio', [
-
-    // imported Dependencies - 
     'ngAnimate',
     'ui.bootstrap',
     'ui.router',
     'ngSanitize',
- 
-    //** Portfolio ***//
-    // Controllers
-    // 'MainController',
-    
 ])
+
 .config([
     '$routeProvider',
     '$httpProvider', 
@@ -51,8 +45,16 @@ angular.module('portfolio', [
    
 
 }])
-.run(['$rootScope', '$http', '$location', function( $rootScope, $http, $location ){
-   
-    
+
+.run([
+	'$rootScope', 
+	'$http', 
+	'$location', 
+	'$trace', 
+	function( $rootScope, $http, $location, $trace ){
+   		
+   		console.log('jhhhh');
+     	$trace.enable('TRANSITION');
+     
 }])
 
