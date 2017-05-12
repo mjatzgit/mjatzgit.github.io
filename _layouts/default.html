@@ -4,13 +4,13 @@
   {% include head.html %}
 
   <body>
-    <div ng-app="portfolio">
+    <div ng-app="portfolioApp" ng-controller="siteController">
     {% include header.html %}
 
     <div class="page-content">
       <div class="row">
          
-          <div ui-view></div>
+          <div class="main" ui-view></div>
       
       </div>
     </div>
