@@ -7,6 +7,7 @@ angular.module('portfolio', [
     'ui.bootstrap',
     'ui.router',
     'ngSanitize',
+    'MainController',
 ])
 
 .config([
