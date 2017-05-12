@@ -10,14 +10,12 @@ angular.module('portfolio', [
 ])
 
 .config([
-    '$routeProvider',
-    '$httpProvider', 
-    '$locationProvider',
     '$stateProvider',
     '$urlRouterProvider',
-    function($routeProvider, $httpProvider, $locationProvider, $stateProvider, $urlRouterProvider) {
+    function($stateProvider, $urlRouterProvider) {
         	
-       console.log('congig');
+       console.log('config');
+
        // // For any unmatched url, redirect to /state1
        $urlRouterProvider.otherwise("/hello");
        
