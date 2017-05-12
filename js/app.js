@@ -1,16 +1,14 @@
-//var app = angular.module('egerbyg', ['ui.bootstrap', 'duScroll', 'mgcrea.jquery','mgcrea.bootstrap.affix'] );
-
 'use strict';
 /**********************************************************************
  * Angular Application
  **********************************************************************/
 angular.module('portfolio', [
 
-    // imported Dependencies - - - - 
+    // imported Dependencies - 
     'ngAnimate',
     'ui.bootstrap',
     'ui.router',
-    //'ngSanitize',
+    'ngSanitize',
  
     //** Portfolio ***//
     // Controllers

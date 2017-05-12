@@ -2,7 +2,7 @@
 /**********************************************************************
  * Angular Application
  **********************************************************************/
- angular.module('siteController', [])
+ angular.module('portfolio', [])
 
  .controller('siteController', function ( $window, $scope, ProjectService, $uibModal, $log ) {
 
