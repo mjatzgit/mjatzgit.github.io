@@ -2,12 +2,14 @@
 /**********************************************************************
  * Angular Application
  **********************************************************************/
-angular.module('portfolio', [
+angular
+.module('portfolio', [
     'ngAnimate',
     'ui.bootstrap',
     'ui.router',
     'ngSanitize',
     'MainController',
+    'miscController',
  ])
 
 .config([
